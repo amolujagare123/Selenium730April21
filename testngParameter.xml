@@ -2,25 +2,14 @@
 
 <suite name="my project">
 
-    <groups>
-        <run>
-            <include name="email"/>
-        </run>
-    </groups>
 
+    <parameter name="myUrl" value="http://localhost:8080"/>
 
 
     <test name="module 1">
         <classes>
             <class name ="TestNGDemos.Demos.ClassOne"/>
-
-            <class name ="TestNGDemos.Demos.ClassTwo">
-                <!--<methods>
-                    <exclude name="classTwotest1"/>
-
-                </methods>-->
-
-            </class>
+            <class name ="TestNGDemos.Demos.ClassTwo"/>
 
         </classes>
     </test>
