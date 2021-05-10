@@ -5,12 +5,13 @@ import org.testng.annotations.Test;
 
 public class ClassTwo {
 
-    @Parameters("myUrl")
+    @Parameters({"myUrl","os"})
     @Test
-    public void classTwotest1(String ul)
+    public void classTwotest1(String ul,String myOs)
     {
         System.out.println("classTwotest1()");
         System.out.println("Url="+ul);
+        System.out.println("OS="+myOs);
     }
 
     @Test  (groups = "email")

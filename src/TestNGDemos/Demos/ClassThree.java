@@ -20,12 +20,13 @@ public class ClassThree {
     }
 
 
-    @Parameters("myUrl")
+    @Parameters({"myUrl","os"})
     @Test
-    public void classThreetest1(String ul)
+    public void classThreetest1(String ul,String myOs)
     {
         System.out.println("classThreetest1()");
         System.out.println("Url="+ul);
+        System.out.println("OS="+myOs);
 
     }
 

@@ -4,7 +4,7 @@
 
 
     <parameter name="myUrl" value="http://localhost:8080"/>
-
+    <parameter name="os" value="linux"/>
 
     <test name="module 1">
         <classes>
