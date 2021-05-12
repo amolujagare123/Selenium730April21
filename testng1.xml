@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="my project">
+
+    <listeners>
+        <listener class-name="ForListners.MyListner"/>
+    </listeners>
+
+    <test name="module 1">
+        <classes>
+            <class name ="TestNGDemos.Demo2.Demos.ClassOne"/>
+            <class name ="TestNGDemos.Demo2.Demos.ClassTwo"/>
+        </classes>
+    </test>
+
+    <test name="module 2">
+        <classes>
+            <class name ="TestNGDemos.Demo2.Demos.ClassThree"/>
+        </classes>
+    </test>
+
+</suite>

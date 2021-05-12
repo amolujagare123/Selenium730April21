@@ -1,0 +1,23 @@
+<suite name="All sites">
+
+    <listeners>
+    <listener class-name="ForListners.MyExtentReportListner" />
+  </listeners>
+
+
+
+    <test name="study sites">
+        <classes>
+            <class name="TestNGDemos.RealDemos.ForumSites"/>
+            <class name="TestNGDemos.RealDemos.TutorialsSites"/>
+        </classes>
+    </test>
+
+    <test name="social sites">
+    <classes>
+        <class name="TestNGDemos.RealDemos.SocialSites"/>
+    </classes>
+    </test>
+
+
+</suite>
