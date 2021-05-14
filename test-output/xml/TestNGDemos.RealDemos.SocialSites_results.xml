@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="social sites"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="17.449">
+  <properties />
+  
+  
+            <testcase name="instagram" time="6.381" classname="TestNGDemos.RealDemos.SocialSites" />
+                <testcase name="facebook" time="2.609" classname="TestNGDemos.RealDemos.SocialSites" />
+                <testcase name="twitter" time="8.459" classname="TestNGDemos.RealDemos.SocialSites" />
+      
+</testsuite>
