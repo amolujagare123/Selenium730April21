@@ -1,4 +1,4 @@
-package TestNGDemos;
+package DataProviderDemo;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -45,33 +45,21 @@ public class LoginDemoExcelx {
 
         XSSFWorkbook workbook = new XSSFWorkbook(fis);
 
-        XSSFSheet sheet = workbook.getSheet("Sheet1");
+        XSSFSheet sheet = workbook.getSheet("Sheet2");
 
         int rowCount = sheet.getPhysicalNumberOfRows();
           // row x col --> row-> record , col -> number of input
-        Object[][] data = new Object[rowCount][2];
+        Object[][] data = new Object[rowCount-1][2]; // 6 with header
+                                                 //  valid will be 5 for array
 
-        for(int i=0;i<rowCount;i++)
+        for(int i=0;i<rowCount-1;i++)
         {
-            XSSFRow row = sheet.getRow(i);
+            XSSFRow row = sheet.getRow(i+1);
 
             data[i][0] =   row.getCell(0).toString().trim();
             data[i][1] =   row.getCell(1).toString().trim();
 
         }
-
-
-     /*   data[0][0] = "admin"; // user
-        data[0][1] = "admin"; // pass
-
-        data[1][0] = "admin1";
-        data[1][1] = "rohan";
-
-        data[2][0] = "komal";
-        data[2][1] = "sunny";
-
-        data[3][0] = "amol";
-        data[3][1] = "sunny";*/
 
         return  data;
     }
